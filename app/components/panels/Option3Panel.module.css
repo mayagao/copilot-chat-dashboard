@@ -1,0 +1,137 @@
+.label {
+  font-weight: 600;
+}
+
+.textareaWrapper {
+  position: relative;
+  border: 1px solid var(--color-border-default);
+  padding-bottom: 40px;
+  border-radius: 6px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--color-canvas-default);
+  resize: none;
+  min-height: 300px;
+  color: var(--color-fg-default);
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--color-fg-subtle);
+}
+
+.textareaWrapper:focus-within {
+  border-color: var(--color-accent-fg);
+  box-shadow: 0 0 0 1px var(--color-accent-fg);
+}
+
+.actionStrip {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 4px 4px 6px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  right: 0px;
+}
+
+.snippetPills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.actionButtons {
+  display: flex;
+  margin-left: 8px;
+}
+
+/* Unified button styles */
+.iconButton {
+  width: 28px;
+  height: 28px;
+  padding: 4px;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  color: var(--color-fg-muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconButton:hover {
+  background-color: var(--color-canvas-subtle);
+  color: var(--color-fg-default);
+}
+
+/* For buttons that need to be hidden initially */
+.iconButton.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.iconButton.hidden.visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.pill {
+  padding: 4px 8px;
+  border: 1px solid var(--color-border-default);
+  border-radius: 6px;
+  color: var(--color-fg-muted);
+  background-color: var(--color-canvas-default);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  line-height: 18px;
+}
+
+.pill:hover {
+  background-color: var(--color-canvas-subtle);
+  color: var(--color-fg-default);
+}
+
+.cornerButtonContainer {
+  position: absolute;
+  bottom: 4px;
+  right: 0px;
+}
+
+.cornerButton {
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  color: var(--color-fg-muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cornerButton:hover {
+  background-color: var(--color-neutral-muted);
+}
+
+.rotateCounterClockwise {
+  transform: scaleX(-1);
+}

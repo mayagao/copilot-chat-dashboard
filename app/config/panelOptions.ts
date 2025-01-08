@@ -1,5 +1,6 @@
 import Option1Panel from "../components/panels/Option1Panel";
 import Option2Panel from "../components/panels/Option2Panel";
+import Option3Panel from "../components/panels/Option3Panel";
 
 export type PanelOption = {
   id: string;
@@ -23,6 +24,11 @@ export const panelOptions: PanelOption[] = [
     title: "Option 2",
     description: "This is the content for option 2",
     component: Option2Panel,
+  },
+  {
+    id: "option-3",
+    title: "Customize",
+    component: Option3Panel,
   },
 ];
 
