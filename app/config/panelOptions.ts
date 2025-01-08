@@ -1,6 +1,6 @@
-import { Option1Panel } from "../components/panels/Option1Panel";
-import { Option2Panel } from "../components/panels/Option2Panel";
-import { Option3Panel } from "../components/panels/Option3Panel";
+import Option1Panel from "../components/panels/Option1Panel";
+import Option2Panel from "../components/panels/Option2Panel";
+import Option3Panel from "../components/panels/Option3Panel";
 
 export type PanelOption = {
   id: string;
@@ -9,7 +9,7 @@ export type PanelOption = {
   component: () => JSX.Element;
 };
 
-export const PANEL_OPTIONS: PanelOption[] = [
+export const panelOptions: PanelOption[] = [
   {
     id: "option-1",
     title: "Chat",
@@ -30,5 +30,4 @@ export const PANEL_OPTIONS: PanelOption[] = [
   },
 ];
 
-export const getDefaultOption = () =>
-  PANEL_OPTIONS.find((opt) => opt.isDefault) || PANEL_OPTIONS[0];
+export const getDefaultOption = () => panelOptions[0];

@@ -1,31 +1,29 @@
 import { ComponentType } from "react";
-import { panelOptions } from "../../config/panelOptions";
+import { panelOptions, PanelOption } from "../../config/panelOptions";
 
 // Import all panel components
 import Option1Panel from "./Option1Panel";
 import Option2Panel from "./Option2Panel";
 import Option3Panel from "./Option3Panel";
 
-// Define a type for panel components
-export type PanelComponent = ComponentType<{}>;
+export type { PanelOption };
+export { Option1Panel, Option2Panel, Option3Panel };
 
-// Create a map of panel IDs to their components
-export const panels: Record<string, PanelComponent> = {
-  "option-1": Option1Panel,
-  "option-2": Option2Panel,
-  "option-3": Option3Panel,
-};
+// Export the panel options
+export { panelOptions };
 
-// Helper function to get panel component by ID
-export const getPanelComponent = (id: string): PanelComponent | null => {
+// Define the getPanelComponent function
+export const getPanelComponent = (id: string) => {
   switch (id) {
     case "option-1":
-      return panels["option-1"];
+      return Option1Panel;
     case "option-2":
-      return panels["option-2"];
+      return Option2Panel;
     case "option-3":
-      return panels["option-3"];
+      return Option3Panel;
     default:
       return null;
   }
 };
+
+// Ensure it's exported
