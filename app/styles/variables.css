@@ -1,0 +1,7 @@
+:root {
+  /* Button colors */
+  --color-btn-primary-bg: rgb(31, 136, 61);
+  --color-btn-primary-border: rgba(31, 136, 61, 0.15);
+  --color-btn-primary-hover-bg: rgb(24, 108, 48);
+  --color-btn-primary-hover-border: rgba(31, 136, 61, 0.15);
+}

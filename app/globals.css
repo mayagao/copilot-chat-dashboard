@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* GitHub's color system */
+  --color-fg-default: #24292f;
+  --color-fg-muted: #57606a;
+  --color-fg-disabled: #8c959f;
+
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+
+  --color-border-default: #d0d7de;
+  --color-border-muted: #d8dee4;
+  --color-primer-border-active: #0969da;
+
+  --color-action-list-item-default-hover-bg: rgba(208, 215, 222, 0.32);
+  --color-action-list-item-default-selected-bg: #f6f8fa;
+
+  /* Typography */
+  --base-text-weight-light: 300;
+  --base-text-weight-normal: 400;
+  --base-text-weight-medium: 500;
+  --base-text-weight-semibold: 600;
+
+  --text-body-size-medium: 14px;
+  --text-body-size-small: 12px;
+
+  --line-height-condensed-ultra: 1;
+  --line-height-condensed: 1.25;
+  --line-height-default: 1.5;
+}

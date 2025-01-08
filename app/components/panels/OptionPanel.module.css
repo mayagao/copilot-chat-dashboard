@@ -1,0 +1,15 @@
+.panel {
+  padding: 16px;
+}
+
+.panel h3 {
+  margin-bottom: 8px;
+  font-size: var(--text-body-size-medium);
+  font-weight: var(--base-text-weight-semibold);
+}
+
+.panel p {
+  color: var(--color-fg-muted);
+  font-size: var(--text-body-size-medium);
+  line-height: var(--line-height-default);
+}

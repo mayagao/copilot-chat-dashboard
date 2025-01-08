@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 16px;
+  height: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content {
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.logoText {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.description {
+  color: var(--color-fg-muted);
+  font-size: var(--text-body-size-medium);
+  line-height: var(--line-height-default);
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.actionButton {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #ffffff;
+  border: 1px solid var(--color-border-default);
+  border-radius: 32px;
+  cursor: pointer;
+  text-align: left;
+  width: fit-content;
+  align-items: center;
+  box-shadow: 0 1px 0 rgba(27, 31, 36, 0.04);
+}
+
+.actionButton:hover {
+  background: #ffffff;
+  border-color: var(--color-accent-emphasis);
+  box-shadow: 0 1px 0 rgba(27, 31, 36, 0.1);
+}
+
+.buttonContent {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.buttonTitle {
+  font-weight: var(--base-text-weight-medium);
+  color: var(--color-fg-default);
+  line-height: var(--line-height-default);
+}
+
+.actionButton {
+  color: var(--color-fg-muted);
+  line-height: var(--line-height-default);
+  white-space: nowrap;
+  overflow: hidden;
+}

@@ -1,0 +1,102 @@
+.instructionPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.section h3 {
+  font-size: 12px;
+  font-weight: var(--base-text-weight-medium);
+  color: var(--color-fg-muted);
+  margin: 0;
+}
+
+.textArea {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 8px 12px;
+  border: 1px solid var(--color-border-default);
+  border-radius: 6px;
+  resize: vertical;
+  min-height: 100px;
+  background: var(--color-canvas-subtle);
+  width: 100%;
+}
+
+.roleInput {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.roleLabel {
+  font-size: 12px;
+  color: var(--color-fg-muted);
+  padding: 0 4px;
+}
+
+.helpSection {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--color-canvas-subtle);
+  border-radius: 6px;
+  margin-top: 8px;
+}
+
+.helpIcon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.helpSection h4 {
+  font-size: 12px;
+  font-weight: var(--base-text-weight-medium);
+  margin: 0 0 4px;
+}
+
+.helpSection p {
+  font-size: 12px;
+  color: var(--color-fg-muted);
+  margin: 0 0 8px;
+}
+
+.helpSection ol {
+  font-size: 12px;
+  color: var(--color-fg-muted);
+  margin: 0;
+  padding-left: 16px;
+}
+
+.helpSection li {
+  margin-bottom: 4px;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  text-align: center;
+  color: var(--color-fg-muted);
+  font-size: 12px;
+  background: var(--color-canvas-subtle);
+  border-radius: 6px;
+}
+
+.browseButton {
+  padding: 4px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--color-border-default);
+  background: var(--color-canvas-default);
+  font-size: 12px;
+  cursor: pointer;
+}
