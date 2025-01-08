@@ -20,5 +20,5 @@ export const getPanelComponent = (id: string): PanelComponent | null => {
   if (!option) return null;
 
   // Use the panel component if defined, otherwise use default
-  return panels[id] || panels[option.defaultPanel] || null;
+  return panels[id] || null;
 };

@@ -6,6 +6,7 @@ export type PanelOption = {
   title: string;
   description: string;
   component: React.ComponentType;
+  defaultPanel?: boolean;
   isDefault?: boolean;
 };
 
