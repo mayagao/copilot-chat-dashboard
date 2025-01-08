@@ -1,7 +1,9 @@
+import { CopilotIcon, GearIcon } from "@primer/octicons-react";
+
 type ConversationItem = {
   title: string;
-  tag: string;
-  icon?: string;
+  tag?: string;
+  icon?: React.ComponentType;
 };
 
 type SidebarSection = {
@@ -13,11 +15,32 @@ export const sidebarData: SidebarSection[] = [
   {
     title: "Recent",
     items: [
-      { title: "General Conversation", tag: "@github" },
-      { title: "Core engineering", tag: "@coreeng" },
-      { title: "Backend API", tag: "@backend" },
-      { title: "Jira", tag: "@jira" },
-      { title: "LaunchDarkly", tag: "@launchdark" },
+      {
+        title: "General Conversation",
+        tag: "@github",
+        icon: CopilotIcon,
+      },
+      {
+        title: "Core engineering",
+        tag: "@coreeng",
+      },
+      {
+        title: "Backend API",
+        tag: "@backend",
+      },
+      {
+        title: "Jira",
+        tag: "@jira",
+      },
+      {
+        title: "LaunchDarkly",
+        tag: "@launchdark",
+      },
+      {
+        title: "Manage",
+        tag: "",
+        icon: GearIcon,
+      },
     ],
   },
   {

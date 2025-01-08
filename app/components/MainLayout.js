@@ -8,6 +8,9 @@ import {
   GearIcon,
   KebabHorizontalIcon,
   XIcon,
+  PencilIcon,
+  ShareIcon,
+  SidebarCollapseIcon,
 } from "@primer/octicons-react";
 import { useRouter, usePathname } from "next/navigation";
 import { panelOptions, getDefaultOption } from "../config/panelOptions";
@@ -41,9 +44,20 @@ const MainLayout = ({ children, setIsPanelVisible, isPanelVisible }) => {
     >
       {/* Left Sidebar */}
       <div className={styles.sidebar}>
-        <div className={styles.logo}>
+        {/* <div className={styles.logo}>
           <MarkGithubIcon size={24} />
           <span>Copilot</span>
+        </div> */}
+
+        <div className={styles.sidebarHeader}>
+          <div className={styles.headerActions}>
+            <button className={styles.iconButton}>
+              <SidebarCollapseIcon size={16} />
+            </button>
+            <button className={styles.iconButton}>
+              <PencilIcon size={16} />
+            </button>
+          </div>
         </div>
 
         <div className={styles.sidebarContent}>
@@ -58,9 +72,13 @@ const MainLayout = ({ children, setIsPanelVisible, isPanelVisible }) => {
                       item.title === "New conversation" ? styles.selected : ""
                     }`}
                   >
-                    {section.title === "Recent" && (
-                      <div className={styles.iconCircle} />
-                    )}
+                    {section.title === "Recent" ? (
+                      item.icon ? (
+                        <item.icon size={16} className="color-fg-muted" />
+                      ) : (
+                        <div className={styles.iconCircle} />
+                      )
+                    ) : null}
                     <div className={styles.conversationText}>
                       <span>{item.title}</span>
                       {item.tag && (
@@ -115,6 +133,9 @@ const MainLayout = ({ children, setIsPanelVisible, isPanelVisible }) => {
           >
             <WelcomeContent />
             {children}
+            <div className={styles.inputContainer}>
+              <div className={styles.inputPlaceholder}></div>
+            </div>
           </div>
         </div>
 

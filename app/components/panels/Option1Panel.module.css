@@ -1,0 +1,43 @@
+.container {
+}
+
+.label {
+  font-weight: 600;
+  margin-bottom: 2px;
+  color: var(--color-fg-default);
+}
+
+.description {
+  color: var(--color-fg-muted);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.optionGroup {
+  margin-bottom: 1.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--color-border-default);
+  border-radius: 6px;
+  background-color: var(--color-canvas-default);
+  resize: vertical;
+  min-height: 280px;
+}
+
+.input::placeholder {
+  color: var(--color-fg-subtle);
+  opacity: 0.6;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-accent-emphasis);
+  box-shadow: 0 0 0 2px var(--color-accent-muted);
+}
+
+.button {
+  font-weight: var(--base-text-weight-semibold);
+}
